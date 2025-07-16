@@ -26,6 +26,24 @@
     <div class="business_data"><%= business_number %> • <%= business_direction %></div>
 </div>
 
+<hr>
+
+<div class="client_info">
+    <h4>INFORMACIÓN DEL CLIENTE</h4>
+    <p>Cliente <%=client.name%></p>
+    <p>Dirección <%=client.address%></p>
+    <p>Mesa <%=client.table%></p>
+    <p>Comensales <%=client.diners%></p>
+    <p>Monedero <%=client.purse%></p>
+    <p>Deuda <%=client.debt%></p>  
+    <% if (order.noteClient) { %>
+        <div class="note"><strong>Nota:</strong> <%= order.noteClient %></div>
+    <% } %>    
+</div>
+
+<hr>
     
+
+
 </body>
 </html>
