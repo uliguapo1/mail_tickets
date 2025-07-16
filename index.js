@@ -9,7 +9,11 @@ app.listen(port, () => {
     console.log(`Server is running on http://localhost:${port}`);
 });
 
-app.get("/", function(req, res){
+app.get("/ticket", (req, res) => {
+    res.render('ticket', {
+
+    })
+
     res.render('index.ejs');
 
 });
